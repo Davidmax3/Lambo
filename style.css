@@ -1,0 +1,190 @@
+body  {
+   background-color: rgb(19, 18, 18);
+   color: white;
+}
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+a {
+   color: white;
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+header img {
+   width: 50px;
+   height: 60px;
+   margin-top: 7px;
+   margin-left: 10px;
+}
+header nav {
+   background-color: rgb(19, 18, 18);
+   height: 70px;
+   width: 100%;
+   position: fixed;
+}
+ #search {
+padding: 10px;
+border: 2px solid rgb(214, 210, 210);
+position: fixed;
+top: 3%;
+right: 20%;
+background-color: transparent;
+border-radius: 50%;
+transition: 2s ease-in;
+ }
+ #search::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   top: 90%;
+   width: 10px;
+transition: .1s ease-in;
+transform: rotate(30deg);
+   margin: 0px 0 0 19px;
+ }
+ 
+ #search.sho::after {
+   top: 49%;
+transition: .1s ease-in;
+margin: 0;
+   width: 22px;
+ }
+ 
+.button{
+   width: 40px;
+   height: 25px;
+   background: none;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0;
+   cursor: pointer;
+   top: 3%;
+   right: 3%;
+   position: fixed;
+   transition: transform 300ms;
+}
+.button::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   margin: auto;
+}
+.button span, button::after {
+   height: 2px;
+   width: 70%;
+   background-color: white;
+}
+.button:hover span{
+   transition: .5s;
+   width: 70%;
+}
+.button:hover::after {
+   transition: .5s;
+   width: 30%;
+}
+.button.active::after {
+width: 0;
+}
+.button.active span:first-child {
+   width: 70%;
+   transform: rotate(43deg) translateY(12px) translateX(4px);
+}
+.button.active span:last-child {
+   width: 70%;
+   transform: rotate(-43deg) translateY(-12px) translateX(4px);
+}
+.allli {
+   background-color: rgb(19, 18, 18);
+   width: 100%;
+   overflow: hidden;
+   transition: .3s ease-in;
+   font-size: 28px;
+   z-index: 99;
+   height: 0rem;
+   position: absolute;
+   top: 10%;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.allli li {
+   border-top: 1px dotted white;
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-bottom: 20px;
+}
+#first {
+   border-top: 0;
+}
+span {
+   float: right;
+   padding-right: 10px;
+}
+.allli.drop {
+ height: 39rem;
+}
+.dropdown {
+   position: relative;
+   overflow: hidden;
+height: 0rem;
+   background-color: rgb(46, 45, 45);
+   margin: 20px 0 -20px -10px;
+}
+ .allli li:focus-within .dropdown {
+   height: 14rem;
+ }
+ .sec1 {
+   
+   background: url(felipe-simo-HBop_t9V9kM-unsplash.jpg) no-repeat;
+   background-size: cover;
+   height: 300px;
+ }
+
+ .sec1 p {
+font-size: 27px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 100px 0 0 20px;
+ }
+ .sec1 h1 {
+   font-size: 35px;
+   font-family: monospace;
+   padding-left: 20px;
+ }
+ .input {
+   background-color: rgb(19, 18, 18);
+   width: 100%;
+   height: 0;
+   overflow: hidden;
+   transition: .2s ease-in;
+   border-radius: 0 0 20px 20px;
+   position: absolute;
+   position: fixed;
+   top: 9%;
+ }
+ .input.indrop {
+   height: 80px;
+ }
+ .input input {
+   background-color: rgb(19, 18, 18);
+   border-radius: 5px;
+   height: 30px;
+   outline: none;
+   font-size: 15px;
+   padding-left: 10px;
+   color: white;
+   margin: 20px 10px;
+   border: 2px solid rgb(214, 210, 210);
+   width: 95%;
+ }
+.input i {
+   font-size: 25px;
+   top: 29%;
+   right: 15px;
+   position: absolute;
+}
